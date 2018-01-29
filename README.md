@@ -1,3 +1,18 @@
+<!-- https://www.sitepoint.com/creating-your-first-gem/
+
+Now in your main program you can just require your module and give it any file to parse. In Rails, we would probably put a module like this in the lib folder. You can create large module 'libraries' consisting of many nested modules and classes. Here is a more complex example module used for processing data.May 5, 2016
+
+bundle gem carrierwave_asserts
+add code
+gem build carrierwave_asserts.gemspec
+gem install carrierwave_asserts.gemspec
+add this to a local rails Gemfile
+gem 'carrierwave_asserts' -->
+
+
+
+
+
 # CarrierwaveAsserts
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/carrierwave_asserts`. To experiment with that code, run `bin/console` for an interactive prompt.
