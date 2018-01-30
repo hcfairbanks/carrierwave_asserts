@@ -5,7 +5,7 @@ Now in your main program you can just require your module and give it any file t
 bundle gem carrierwave_asserts
 add code
 gem build carrierwave_asserts.gemspec
-gem install carrierwave_asserts.gemspec
+gem install carrierwave_asserts-0.1.0.gem
 add this to a local rails Gemfile
 gem 'carrierwave_asserts' -->
 
@@ -17,7 +17,7 @@ gem 'carrierwave_asserts' -->
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/carrierwave_asserts`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+Description here
 
 ## Installation
 
@@ -37,7 +37,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage Instructions
 
 ## Development
 

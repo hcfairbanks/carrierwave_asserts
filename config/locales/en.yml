@@ -1,0 +1,4 @@
+en:
+  cwa:
+    expected_format: "Expected format: " # These can be overwritten in the application
+    actual_format: "Actual format: "
