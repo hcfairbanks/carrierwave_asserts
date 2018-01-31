@@ -25,9 +25,10 @@ module CarrierwaveAsserts
     include Magick
     #https://lingohub.com/blog/2013/08/internationalization-for-ruby-i18n-gem/
     require 'i18n'
-    #I18n.load_path = Dir['../config/locales/*.yml']
+
+    I18n.load_path = Dir[File.expand_path('../config/locales/*.yml', File.dirname(__FILE__))]
     # I18n.load_path = Dir['./*.yml', './*.rb']
-    I18n.load_path = Dir['/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml']
+    #I18n.load_path = Dir['/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml']
 
     def assert_have_permissions(file_path,permissions)
       file_permissions = (File.stat(file_path).mode & 0777).to_s(8)
