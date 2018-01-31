@@ -2,9 +2,7 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "carrierwave_asserts/version"
-require "i18n"
-Dir.glob( File.dirname("config/locales/en.yml"))
-#https://stackoverflow.com/questions/23986512/app-cannot-access-translation-files-in-engine-or-gem/31426146
+
 Gem::Specification.new do |spec|
   spec.name          = "carrierwave_asserts"
   spec.version       = CarrierwaveAsserts::VERSION
