@@ -10,7 +10,18 @@ add this to a local rails Gemfile
 gem 'carrierwave_asserts' -->
 
 
+# Common issues
+http://siawyoung.com/coding/ruby/invalid-gemspec.html
 
+
+https://stackoverflow.com/questions/6256743/while-executing-gem-extconf-rb-are-not-files
+I got this error because I hadn't commited my updates with git yet.
+
+s.files         = `git ls-files`.split("\n")
+That line is directly using git, and probably causing this error. Just do
+
+git add .
+git commit -a -m "init"
 
 
 # CarrierwaveAsserts
