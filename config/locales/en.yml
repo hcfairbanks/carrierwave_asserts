@@ -1,4 +1,16 @@
 en:
   cwa:
-    expected_format: "Expected format: " # These can be overwritten in the application
+    expected_permissions: "Expected permissions: "
+    actual_permissions: "Actual permissions: "
+    expected_format: "Expected format: "
     actual_format: "Actual format: "
+    expected_size: "Expected file size: "
+    actual_size: "Actual file size: "
+    wrong_location: "File was not found at the expected location \n"
+    not_identical: "\n Is not identical to \n"
+    expected_height: "Expected height: "
+    actual_height: "Actual height: "
+    expected_width: "Expected width: "
+    actual_width: "Actual width: "
+    expected_height_no_larger_than: "Expected height to be no larger than: "
+    expected_width_no_larger_than: "Expected width to be no larger than: "
