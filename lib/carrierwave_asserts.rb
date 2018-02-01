@@ -2,33 +2,12 @@ require "carrierwave_asserts/version"
 require 'minitest/assertions'
 require 'rmagick'
 
-# https://www.sitepoint.com/creating-your-first-gem/
-#
-# Now in your main program you can just require your module and give it any file to parse. In Rails, we would probably put a module like this in the lib folder. You can create large module 'libraries' consisting of many nested modules and classes. Here is a more complex example module used for processing data.May 5, 2016
-#
-# bundle gem carrierwave_asserts
-# add code
-# gem build carrierwave_asserts.gemspec
-# gem install carrierwave_asserts.gemspec
-# add this to a local rails Gemfile
-# gem 'carrierwave_asserts'
-# BROKEN
-# https://github.com/seattlerb/minitest/issues/730
-# https://chriskottom.com/blog/2014/08/customize-minitest-assertions-and-expectations/
-
-
 module CarrierwaveAsserts
-  #https://lingohub.com/blog/2013/08/internationalization-for-ruby-i18n-gem/
-
-  #YAML.load_file('/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml')
   module Minitest::Assertions
     include Magick
-    #https://lingohub.com/blog/2013/08/internationalization-for-ruby-i18n-gem/
     require 'i18n'
 
     I18n.load_path = Dir[File.expand_path('../config/locales/*.yml', File.dirname(__FILE__))]
-    # I18n.load_path = Dir['./*.yml', './*.rb']
-    #I18n.load_path = Dir['/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml']
 
     def assert_have_permissions(file_path,permissions)
       file_permissions = (File.stat(file_path).mode & 0777).to_s(8)

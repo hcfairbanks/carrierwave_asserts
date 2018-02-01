@@ -22,3 +22,24 @@ That line is directly using git, and probably causing this error. Just do
 
 git add .
 git commit -a -m "init"
+
+
+# https://www.sitepoint.com/creating-your-first-gem/
+#
+# Now in your main program you can just require your module and give it any file to parse. In Rails, we would probably put a module like this in the lib folder. You can create large module 'libraries' consisting of many nested modules and classes. Here is a more complex example module used for processing data.May 5, 2016
+#
+# bundle gem carrierwave_asserts
+# add code
+# gem build carrierwave_asserts.gemspec
+# gem install carrierwave_asserts.gemspec
+# add this to a local rails Gemfile
+# gem 'carrierwave_asserts'
+# BROKEN
+# https://github.com/seattlerb/minitest/issues/730
+# https://chriskottom.com/blog/2014/08/customize-minitest-assertions-and-expectations/
+#https://lingohub.com/blog/2013/08/internationalization-for-ruby-i18n-gem/
+
+#YAML.load_file('/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml')
+#https://lingohub.com/blog/2013/08/internationalization-for-ruby-i18n-gem/
+# I18n.load_path = Dir['./*.yml', './*.rb']
+#I18n.load_path = Dir['/home/deploy/Desktop/git/carrierwave_asserts/config/locales/en.yml']
