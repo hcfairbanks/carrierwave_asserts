@@ -1,0 +1,24 @@
+<!-- https://www.sitepoint.com/creating-your-first-gem/
+
+Now in your main program you can just require your module and give it any file to parse. In Rails, we would probably put a module like this in the lib folder. You can create large module 'libraries' consisting of many nested modules and classes. Here is a more complex example module used for processing data.May 5, 2016
+
+bundle gem carrierwave_asserts
+add code
+gem build carrierwave_asserts.gemspec
+gem install carrierwave_asserts-0.1.0.gem
+add this to a local rails Gemfile
+gem 'carrierwave_asserts' -->
+
+
+# Common issues
+http://siawyoung.com/coding/ruby/invalid-gemspec.html
+
+
+https://stackoverflow.com/questions/6256743/while-executing-gem-extconf-rb-are-not-files
+I got this error because I hadn't commited my updates with git yet.
+
+s.files         = `git ls-files`.split("\n")
+That line is directly using git, and probably causing this error. Just do
+
+git add .
+git commit -a -m "init"
