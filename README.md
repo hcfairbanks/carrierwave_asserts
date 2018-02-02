@@ -8,12 +8,18 @@ This gem clones the rspec helpers for carrierwave into minitest asserts.
 Dependencies
 
 imagemagick libmagickwand-dev
+
 You can install them on ubuntu as follows
+
 sudo apt-get install imagemagick libmagickwand-dev
 
+
 The following gems are needed
+
 rmagick  (needs to be added in rails 5)
+
 Minitest (included in rails 5)  
+
 i18n     (included in rails 5)
 
 Add the following lines to your application's Gemfile:
@@ -99,8 +105,13 @@ class PictureUploaderTest < ActiveSupport::TestCase
 end
 ```
 ##########################################################################
-Under project_name/config/locales/some_language.yml
+
+Under
+
+project_name/config/locales/some_language.yml
+
 you can customize the error messages.
+
 Here is the default.
 ```
 en:
