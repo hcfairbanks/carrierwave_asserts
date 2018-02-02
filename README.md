@@ -7,11 +7,11 @@ This gem clones the rspec helpers for carrierwave into minitest asserts.
 
 ### Dependencies
 
-imagemagick libmagickwand-dev
+```imagemagick libmagickwand-dev```
 
 You can install them on ubuntu as follows
 
-sudo apt-get install imagemagick libmagickwand-dev
+```sudo apt-get install imagemagick libmagickwand-dev```
 
 
 The following gems are needed
