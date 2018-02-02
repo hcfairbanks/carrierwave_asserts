@@ -8,6 +8,9 @@ GEM
   specs:
     rake (10.5.0)
 
+PLATFORMS
+  ruby
+
 DEPENDENCIES
   bundler (~> 1.16)
   carrierwave_asserts!
