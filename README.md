@@ -30,11 +30,11 @@ gem 'carrierwave_asserts'
 
 And then execute:
 
-    ```$ bundle install```
+```$ bundle install```
 
 Or install it yourself as:
 
-    ```$ gem install carrierwave_asserts```
+```$ gem install carrierwave_asserts```
 
 ## Usage
 
