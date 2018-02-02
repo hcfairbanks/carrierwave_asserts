@@ -5,15 +5,21 @@ This gem clones the rspec helpers for carrierwave into minitest asserts.
 
 ## Installation
 
-Dependencies
+### Dependencies
 
-imagemagick libmagickwand-dev
+```imagemagick libmagickwand-dev```
+
 You can install them on ubuntu as follows
-sudo apt-get install imagemagick libmagickwand-dev
+
+```sudo apt-get install imagemagick libmagickwand-dev```
+
 
 The following gems are needed
+
 rmagick  (needs to be added in rails 5)
+
 Minitest (included in rails 5)  
+
 i18n     (included in rails 5)
 
 Add the following lines to your application's Gemfile:
@@ -24,11 +30,11 @@ gem 'carrierwave_asserts'
 
 And then execute:
 
-    $ bundle install
+```$ bundle install```
 
 Or install it yourself as:
 
-    $ gem install carrierwave_asserts
+```$ gem install carrierwave_asserts```
 
 ## Usage
 
@@ -40,6 +46,7 @@ Here is a sample uploader file
 project_name/test/uploaders/picture_uploader_test.rb
 
 ##########################################################################
+```
 require 'test_helper'
 require 'minitest/autorun'
 require 'rmagick'
@@ -96,12 +103,17 @@ class PictureUploaderTest < ActiveSupport::TestCase
   end
 
 end
-
+```
 ##########################################################################
-Under project_name/config/locales/some_language.yml
-you can customize the error messages.
-Here is the default.
 
+Under
+
+project_name/config/locales/some_language.yml
+
+you can customize the error messages.
+
+Here is the default.
+```
 en:
   cwa:
     expected_permissions: "Expected permissions: "
@@ -118,7 +130,7 @@ en:
     actual_width: "Actual width: "
     expected_height_no_larger_than: "Expected height to be no larger than: "
     expected_width_no_larger_than: "Expected width to be no larger than: "
-
+```
 
 ## Development
 
