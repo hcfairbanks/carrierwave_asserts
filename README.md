@@ -1,7 +1,6 @@
 # CarrierwaveAsserts
 
-Description here
-This gem clones the rspec helpers for carrierwave into minitest asserts.
+This gem recreates similar rspec matchers for carrierwave into minitest asserts. Please see the usage section for a complete example app.
 
 ## Installation
 
