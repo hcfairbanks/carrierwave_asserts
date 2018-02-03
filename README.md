@@ -37,6 +37,7 @@ Or install it yourself as:
 ```$ gem install carrierwave_asserts```
 
 ## Usage
+Here is an example project using the asserts. [carrierwave_asserts example](https://github.com/hcfairbanks/carrierwave_asserts_example) 
 
 Inside you project under the test folder create a folder uploaders.
 All your uploaders should be tested in this folder.
