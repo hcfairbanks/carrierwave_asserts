@@ -7,7 +7,7 @@ module CarrierwaveAsserts
     include Magick
     require 'i18n'
 
-    I18n.load_path = Dir[File.expand_path('../config/locales/*.yml', File.dirname(__FILE__))]
+    I18n.load_path += Dir[File.expand_path('../config/locales/*.yml', File.dirname(__FILE__))]
 
     def assert_have_permissions(file_path,permissions)
       file_permissions = (File.stat(file_path).mode & 0777).to_s(8)
