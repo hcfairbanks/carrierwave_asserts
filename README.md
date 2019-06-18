@@ -108,7 +108,7 @@ end
 
 Under
 
-project_name/config/locales/some_language.yml
+project_name/config/locales/some_language.cwa.yml
 
 you can customize the error messages.
 
